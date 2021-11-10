@@ -1,4 +1,4 @@
-package com.prova.api.person;
+package com.prova.api.contact;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

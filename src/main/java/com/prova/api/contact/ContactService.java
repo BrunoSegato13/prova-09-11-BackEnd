@@ -1,4 +1,4 @@
-package com.prova.api.person;
+package com.prova.api.contact;
 
 import com.prova.api.exceptions.Exceptions;
 import lombok.RequiredArgsConstructor;
@@ -32,14 +32,14 @@ public class ContactService {
 
     public Contact update(Contact contact){
         if(!contactRepository.existsById(contact.getId())){
-            throw new RuntimeException("Contact not found");
+            throw new Exceptions("Contact not found");
         }
         return contactRepository.save(contact);
     }
 
     public void delete(Long id){
         if(!contactRepository.existsById(id)){
-            throw new RuntimeException("Contact not found");
+            throw new Exceptions("Contact not found");
         }
         contactRepository.deleteById(id);
     }

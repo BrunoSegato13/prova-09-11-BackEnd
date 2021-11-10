@@ -1,4 +1,4 @@
-package com.prova.api.person;
+package com.prova.api.contact;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
